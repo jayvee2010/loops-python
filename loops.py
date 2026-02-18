@@ -1,6 +1,4 @@
-
-
-#print#experiment no.7
+#experiment no.7
 #name:jayvee shah
 #prn:25070123058
 #entc a3
@@ -116,15 +114,15 @@ for i in range(1,4):
     for j in range(1,4):
         print(i,j)  
 
-a=[[1,2,3],[4,5,6],[7,8,9]]
-for i in range(4):
-    for j in range(4):
-        print(a[i][j],end=" ")
-    print() 
+#a=[[1,2,3],[4,5,6],[7,8,9]]
+#for i in range(4):
+    #for j in range(4):
+        #print(a[i][j],end=" ")
+    #print() 
 
 
 a=[[1,2,3],[4,5,6],[7,8,9]]
-b=[[9,8,7][6,5,4],[3,2,1]]
+b=[[9,8,7],[6,5,4],[3,2,1]]
 result=[[0,0,0],[0,0,0],[0,0,0]] 
 for i in range(3):
     for j in range(3):
@@ -138,7 +136,51 @@ for i in range(3):
 
 
 
+#python program to accept three digits and print all possible combinations from the digits
+digits=input("enter three digits ")
+for i in range(len(digits)):
+    for j in range(len(digits)):
+        for k in range(len(digits)):
+            if i!=j and j!=k and i!=k:
+              print(digits[i],digits[j],digits[k])
 
+#armstrong number
+num=int(input("enter a number to check armstrong "))
+sum=0
+len1=len(str(num))
+for i in str(num):
+    sum+=int(i)**len1
+print(sum)
+
+#prime number
+num=int(input("enter a number to check if its prime"))
+if num>1:
+    for i in range(2,num):
+        if num%i==0:
+            print("it is not prime")
+            break
+    else:
+        print("it is prime")
+
+n=5
+for i in range (n):
+    print(i*' '+" *"*(n-i)) 
+
+#hourglass 
+n=6
+for i in range (n):
+    print(i*' '+" *"*(n-i)) 
+for i in range (1,n):
+    print((n-i-1)*' '+" *"*(i+1))
+
+#floyds triange
+n=4
+num=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(num,end=" ")
+        num+=1
+    print()
 
 
 
